@@ -1,0 +1,4 @@
+[build]
+  base = "backend"
+  command = "python main.py"
+  publish = "backend"

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Admission Form</title>
+    
+</head>
+<body>
+    <h1>Admission Form</h1>
+    <form id="admissionForm" action="http://localhost:8000/submit_admission/" method="post" enctype="application/json">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label for="gender">Gender:</label>
+<div class="gender-radio">
+    <div class="radio-item">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+    </div>
+</div>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+        </fieldset>
+        
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+        
+        <!-- Educational Background -->
+        <fieldset>
+            <legend>Educational Background</legend>
+            <label for="school">School Name:</label>
+            <input type="text" id="school" name="school" required><br><br>
+            
+            <label for="mark">Total Mark Secured:</label>
+            <input type="text" id="mark" name="mark" required><br><br>
+            
+            <label for="graduationYear">Year of Completion:</label>
+            <input type="text" id="graduationYear" name="graduationYear" required><br><br>
+        </fieldset>
+        
+        <!-- Additional Information -->
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="comments">Comments or Special Requests:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+        </fieldset>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" id="submit-button">
+    </form>
+    <script src="js/main.js"></script>
+    
+    <footer>
+        <p>Copyright &copy; 2023 Pradyun</p>
+    </footer>
+</body>
+</html>
+
