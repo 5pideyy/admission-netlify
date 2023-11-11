@@ -1,4 +1,7 @@
 [build]
   base = "backend"
   command = "python -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python main.py"
-  publish = "backend"
+  publish = "path/to/your/publish/directory"
+
+[build.environment]
+  PYTHON = "python"
