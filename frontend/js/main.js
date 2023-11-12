@@ -4,7 +4,7 @@ document.getElementById("admissionForm").addEventListener("submit", async (event
     const formData = new FormData(form);
     const formObject = formDataToObject(formData);
 
-    const response = await fetch("https://unicornfastapi.onrender.com/submit_admission/", {
+    const response = await fetch("https://uvicorn-ad.onrender.com/submit_admission/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
