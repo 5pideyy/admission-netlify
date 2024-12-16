@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 try:
-    client = MongoClient("mongodb+srv://admin:K4lwF9358J6Mp4gC@cluster0.1wgqgg8.mongodb.net/?retryWrites=true&w=majority")
+    client = MongoClient("mongodb+srv://admin:admin@cluster0.1wgqgg8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     db = client["admission_db"]
     collection = db["admission_form"]
 except Exception as e:
